@@ -22,4 +22,8 @@ public class PacienteService {
     public Optional<Paciente> getPatientById(int id){
         return pacienteRepository.findById(id);
     }
+
+    public Paciente save(Paciente paciente){
+        return pacienteRepository.save(paciente);
+    }
 }
